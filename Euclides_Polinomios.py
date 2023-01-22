@@ -74,7 +74,7 @@ print(np.poly1d(p1))
 print("\n Polinomio 2: \n")
 print(np.poly1d(p2))
 
-#-----------------------------------Algoritmo-----------------------------------
+#-----------------------------------Algoritmo de Euclides-----------------------------------
 j=0
 poli1Aux = list(p1)
 poli2Aux = list(p2)
