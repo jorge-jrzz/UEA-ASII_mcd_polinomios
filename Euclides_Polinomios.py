@@ -85,14 +85,15 @@ auxP = []
 while (True):
     j=j+1
     resultado, residuo = (np.polydiv(p1, p2))       #Division de polinomios 
+    print("\n------------------\n")
     print("\n", j, "° Resultado: \n")
     print(np.poly1d(resultado))
     print("\n", j, "° Residuo: \n")
     print(np.poly1d(residuo))
-    print("")
-    print(j, "° combinacion lineal: ", "\n", np.poly1d(p1), " = ", "\n", np.poly1d(resultado), " * ", "\n", np.poly1d(p2), " + ", "\n", np.poly1d(residuo))
+    print("\n", j, "° combinacion lineal: \n")
+    print(np.poly1d(p1), " = \n", np.poly1d(resultado), " * \n", np.poly1d(p2), " + \n", np.poly1d(residuo))
     if ((len(residuo)==1) & (residuo[0] == 0) & (j==1)):
-        print("\nComo el primer residuo resulta en 0, el mayor divisor que puede dividir tanto al polimonio p(x) como al polinomio q(x) sin dejar residuo es: \n")
+        print("\n\nComo el primer residuo resulta en 0, el mayor divisor que puede dividir tanto al polimonio p(x) como al polinomio q(x) sin dejar residuo es: \n")
         print(np.poly1d(p2))
 
         if ((len(p2)==1) & (p2[0]==1)):
@@ -111,14 +112,15 @@ while (True):
             poli1 = list(poli2)
             poli2 = list(residuo_t)
 
-        print("\nAsi, el candidato a maximo comun divisor es ", "\n", np.poly1d(residuo_t))
+        print("\n----------------------------------------------\n")
+        print("\nAsi, el candidato a maximo comun divisor es: \n", np.poly1d(residuo_t))
         
         for l in range(len(residuo_t)):
             aux = residuo_t[l] / residuo_t[0]
             auxP.append((aux))
 
-        print ("\nPero necesitamos que sea monico, entonces, el anterior polinomio = \n")
-        print (np.poly1d(auxP), " )* ", Fraction(residuo_t[0]))
+        print ("\nPero necesitamos que sea monico, entonces, el anterior polinomio es igual a la siguiente expresión: \n")
+        print (np.poly1d(auxP), " * (", Fraction(residuo_t[0]), ")")
         
         print("\nPor lo tanto, el mayor divisor que puede dividir tanto al polimonio p(x) como al polinomio q(x) sin dejar residuo es: \n")
         print(np.poly1d(auxP))
