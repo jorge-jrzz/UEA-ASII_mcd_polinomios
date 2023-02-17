@@ -16,11 +16,6 @@ Por ultimo se muestra el resultado y se comprueva que el Maximo Comun Divisor es
 [![Captura-de-pantalla-2023-01-22-a-la-s-6-55-27-p-m.png](https://i.postimg.cc/nLtTN99X/Captura-de-pantalla-2023-01-22-a-la-s-6-55-27-p-m.png)](https://postimg.cc/w10hmvVz)
 
 
-## Funcionamiento
-
-[![code.png](https://i.postimg.cc/2jJKSMNN/code.png)](https://postimg.cc/4n65883W)
-
-
 ## Project status
 
 Este codigo se realizo para el proyecto final de la UEA Algebra Superior II y no existen intenciones de actualizar el codigo en un futuro.
